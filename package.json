@@ -1,6 +1,6 @@
 {
   "name": "vue-extendable-event",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "description": "ExtendableEvent for Vue",
   "license": "BSD-3-Clause",
   "main": "index.js",
