@@ -21,9 +21,10 @@ implementation details of how its events are handled but it can be informed of
 when processing has finished. It can also be informed of any error that
 occurred during processing.
 
-To accomplish this, an event that is emitted via the extendable event API is augmented with a `waitUntil(Promise)` method. The caller of this method passes
-it a Promise such that the event emitter can wait for it to settle before
-proceeding.
+To accomplish this, an event that is emitted via the extendable event API
+is augmented with a `waitUntil(Promise)` method. The caller of this method
+passes it a Promise such that the event emitter can wait for it to settle
+before proceeding.
 
 Additionally, some emitters may desire a specific response from an event
 handler. One motivation for this use case comes from this thread:
@@ -52,7 +53,9 @@ await this.$emitExtendable(name, event);
 
 This method returns a Promise that will settle once all promises passed via
 calls to `event.waitUntil` have settled and once the Promise that was passed to
-`event.respondWith` (if used) has settled. The Promise will be rejected if any of those promises reject, indicating a failure to process the event. Note that not every emitter will have a need for a specific return value via
+`event.respondWith` (if used) has settled. The Promise will be rejected if any
+of those promises reject, indicating a failure to process the event. Note that
+not every emitter will have a need for a specific return value via
 `event.respondWith`, often `event.waitUntil` will suffice.
 
 Here is an example of emitting an "ExtendableEvent":
