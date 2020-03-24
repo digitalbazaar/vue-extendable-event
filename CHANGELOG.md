@@ -1,6 +1,6 @@
 # vue-extendable-event ChangeLog
 
-### 1.0.0 - 2020-xx-xx
+### 1.0.0 - 2020-03-24
 
 ### Added
 - Add core files.
