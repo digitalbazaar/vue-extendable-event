@@ -1,23 +1,26 @@
 {
-  "name": "vue-extendable-event",
+  "name": "@digitalbazaar/vue-extendable-event",
   "version": "1.0.1-0",
+  "type": "module",
   "description": "ExtendableEvent for Vue",
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "module": "./lib/index.js",
   "scripts": {
-    "lint": "eslint \"**/*.{js,vue}\""
+    "lint": "eslint ."
   },
   "files": [
-    "index.js"
+    "lib/*"
   ],
   "peerDependencies": {
-    "vue": "^2.6.6"
+    "vue": "^2.6.12"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-digitalbazaar": "^1.8.0",
-    "eslint-plugin-jsdoc": "^4.8.4",
-    "eslint-plugin-vue": "^5.2.3"
+    "eslint": "^7.32.0",
+    "eslint-config-digitalbazaar": "^2.8.0",
+    "eslint-plugin-jsdoc": "^37.9.7",
+    "eslint-plugin-vue": "^8.6.0",
+    "jsdoc": "^3.6.4",
+    "jsdoc-to-markdown": "^7.1.1"
   },
   "repository": {
     "type": "git",
