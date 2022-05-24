@@ -1,6 +1,6 @@
 {
   "name": "@digitalbazaar/vue-extendable-event",
-  "version": "2.0.1-0",
+  "version": "3.0.0",
   "type": "module",
   "description": "ExtendableEvent for Vue",
   "license": "BSD-3-Clause",
