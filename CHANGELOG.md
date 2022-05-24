@@ -1,6 +1,6 @@
 # vue-extendable-event ChangeLog
 
-### 3.0.0 - 2022-05-xx
+### 3.0.0 - 2022-05-24
 
 ### Added
 - **BREAKING**: Support installation with Vue 2.x or Vue 3.x.
