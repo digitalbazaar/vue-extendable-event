@@ -1,5 +1,13 @@
 # vue-extendable-event ChangeLog
 
+### 4.0.0 - 2022-05-xx
+
+### Added
+- Export `emitExtendable` which can be called from `setup()` or elsewhere.
+
+### Removed
+- **BREAKING**: Remove Vue 2.x support.
+
 ### 3.0.0 - 2022-05-24
 
 ### Added
