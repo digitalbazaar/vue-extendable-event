@@ -1,6 +1,6 @@
 # vue-extendable-event ChangeLog
 
-### 4.0.1 - 2022-05-xx
+### 4.0.1 - 2022-05-25
 
 ### Fixed
 - Ensure `this.$emitExtendable()` can be called from component methods.
