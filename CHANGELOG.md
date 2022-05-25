@@ -3,7 +3,7 @@
 ### 4.0.1 - 2022-05-xx
 
 ### Fixed
-- Ensure `this.@emitExtendable()` can be called from component methods.
+- Ensure `this.$emitExtendable()` can be called from component methods.
 
 ### 4.0.0 - 2022-05-25
 
