@@ -1,6 +1,6 @@
 # vue-extendable-event ChangeLog
 
-### 4.0.0 - 2022-05-xx
+### 4.0.0 - 2022-05-25
 
 ### Added
 - Export `emitExtendable` which can be called from `setup()` or elsewhere.
