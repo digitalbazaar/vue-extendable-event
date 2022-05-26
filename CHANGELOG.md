@@ -1,6 +1,6 @@
 # vue-extendable-event ChangeLog
 
-### 4.1.0 - 2022-05-xx
+### 4.1.0 - 2022-05-26
 
 ### Add
 - Add `createEmitExtendable()` to be called from `setup()`.
