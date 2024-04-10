@@ -115,3 +115,46 @@ export default {
   }
 }
 ```
+
+
+Example for Vue 3 Composition API which does not have access to `this`:
+
+```js
+<script>
+import {createEmitExtendable} from '@digitalbazaar/vue-extendable-event';
+import {ref} from 'vue';
+
+// Constants
+const emitExtendable = createEmitExtendable();
+
+export default {
+  name: 'MyComponent',
+  props: {
+    bar: {
+      default: 'bar',
+      type: String,
+    }
+  },
+  emits: ['foo'],
+  setup(props, {emit}) {
+    // Refs
+    const loading = ref(false);
+
+    // Helper functions
+    async function click() {
+      loading.value = true;
+      try {
+        const event = {foo: props.bar};
+        await emitExtendable('foo', event, emit);
+      } catch(e) {
+        // handle/display error somehow
+      } finally {
+        loading.value = false;
+      }
+    }
+
+    return {click};
+  }
+};
+</script>
+```
