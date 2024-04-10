@@ -1,5 +1,11 @@
 # vue-extendable-event ChangeLog
 
+### 4.2.0 - 2024-04-dd
+
+### Add
+- Include `emit` function from `setup()` as a third parameter to handle
+  Composition API components.
+
 ### 4.1.0 - 2022-05-26
 
 ### Add
