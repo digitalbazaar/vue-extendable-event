@@ -117,15 +117,12 @@ export default {
 ```
 
 
-Example for Vue 3 Composition API which does not have access to `this`:
+Example for Vue 3 Composition API, pass emit into createEmitExtendable:
 
 ```js
 <script>
 import {createEmitExtendable} from '@digitalbazaar/vue-extendable-event';
 import {ref} from 'vue';
-
-// Constants
-const emitExtendable = createEmitExtendable();
 
 export default {
   name: 'MyComponent',
@@ -137,15 +134,16 @@ export default {
   },
   emits: ['foo'],
   setup(props, {emit}) {
-    // Refs
+    // Pass in the emit function to createEmitExtendable
+    const emitExtendable = createEmitExtendable({emit});
+
     const loading = ref(false);
 
-    // Helper functions
     async function click() {
       loading.value = true;
       try {
         const event = {foo: props.bar};
-        await emitExtendable('foo', event, emit);
+        await emitExtendable('foo', event);
       } catch(e) {
         // handle/display error somehow
       } finally {
