@@ -134,7 +134,7 @@ export default {
   },
   emits: ['foo'],
   setup(props, {emit}) {
-    // Pass in the emit function to createEmitExtendable
+    // pass in the emit function to createEmitExtendable
     const emitExtendable = createEmitExtendable({emit});
 
     const loading = ref(false);
