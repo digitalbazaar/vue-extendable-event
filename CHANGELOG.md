@@ -1,14 +1,14 @@
 # vue-extendable-event ChangeLog
 
-### 4.2.0 - 2024-04-dd
+### 4.2.0 - 2024-04-11
 
-### Add
+### Added
 - Include `emit` function from `setup()` as an optional createEmitExtendable
   parameter to handle Composition API components.
 
 ### 4.1.0 - 2022-05-26
 
-### Add
+### Added
 - Add `createEmitExtendable()` to be called from `setup()`.
 
 ### 4.0.1 - 2022-05-25
