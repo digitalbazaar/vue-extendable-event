@@ -1,6 +1,6 @@
 # vue-extendable-event ChangeLog
 
-### 4.2.1 - 2025-mm-dd
+### 4.2.1 - 2025-07-02
 
 ### Fixed
 - Fix bug where `createEmitExtendable` could not be called without any
