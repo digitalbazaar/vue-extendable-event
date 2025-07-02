@@ -1,9 +1,15 @@
 # vue-extendable-event ChangeLog
 
+### 4.2.1 - 2025-mm-dd
+
+### Fixed
+- Fix bug where `createEmitExtendable` could not be called without any
+  parameters.
+
 ### 4.2.0 - 2024-04-11
 
 ### Added
-- Include `emit` function from `setup()` as an optional createEmitExtendable
+- Include `emit` function from `setup()` as an optional `createEmitExtendable`
   parameter to handle Composition API components.
 
 ### 4.1.0 - 2022-05-26
